@@ -33,7 +33,7 @@ const ManageDoctors = () => {
         doctors.map((doctor, index) => <DoctorRow
         key={doctor._id}
         index={index}
-        doctor={doctor.doctor}
+        doctor={doctor}
         refetch={refetch}
         ></DoctorRow>)
     }
@@ -43,5 +43,8 @@ const ManageDoctors = () => {
         </div>
     );
 };
+
+// https://www.youtube.com/watch?v=JLKzr83xZGo ======= sendgrid video link
+
 
 export default ManageDoctors;

@@ -47,7 +47,7 @@ const imageStorageKey = '80d2de6e3f58e6b14d7430cf1f478fc0'
                         'content-type':'application/json',
                         authorization: `Bearer ${localStorage.getItem('accessToken')}`
                     },
-                    body:JSON.stringify({doctor})
+                    body:JSON.stringify(doctor)
                 } )
                 .then(res => res.json())
                 .then(inserted => {
